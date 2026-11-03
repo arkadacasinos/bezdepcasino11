@@ -1,0 +1,206 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --color-background: #0f212e;
+  --color-foreground: #ffffff;
+}
+
+@layer components {
+  /* Mangled class prefix x4v7- */
+  .x4v7-shell {
+    min-height: 100vh;
+    background-color: #0f212e;
+    color: #b1bad3;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .x4v7-topbar {
+    height: 60px;
+    background-color: #1a2c38;
+    border-bottom: 1px solid rgba(47, 69, 83, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    position: sticky;
+    top: 0;
+    z-index: 40;
+  }
+
+  .x4v7-nav-pill-group {
+    display: inline-flex;
+    background-color: #0f212e;
+    padding: 4px;
+    border-radius: 9999px;
+    gap: 4px;
+  }
+
+  .x4v7-nav-pill {
+    padding: 6px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 9999px;
+    color: #b1bad3;
+    transition: color 0.15s, background-color 0.15s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .x4v7-nav-pill.is-active,
+  .x4v7-nav-pill:hover {
+    background-color: #2f4553;
+    color: #ffffff;
+  }
+
+  .x4v7-btn-login {
+    background-color: #2f4553;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 18px;
+    border-radius: 4px;
+    transition: background-color 0.15s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .x4v7-btn-login:hover {
+    background-color: #3e5a6c;
+  }
+
+  .x4v7-btn-primary {
+    background-color: #1475e1;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 4px;
+    transition: background-color 0.15s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .x4v7-btn-primary:hover {
+    background-color: #1f86f8;
+  }
+
+  .x4v7-sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #b1bad3;
+    border-radius: 4px;
+    transition: background-color 0.15s, color 0.15s;
+    text-decoration: none;
+  }
+
+  .x4v7-sidebar-item:hover {
+    background-color: #213743;
+    color: #ffffff;
+  }
+
+  .x4v7-hero-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #071824;
+    border: 1px solid #213743;
+    min-height: 380px;
+  }
+
+  .x4v7-stat-pill {
+    background-color: #1a2c38;
+    border: 1px solid #213743;
+    border-radius: 6px;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    transition: background-color 0.15s, border-color 0.15s;
+  }
+
+  .x4v7-stat-pill:hover {
+    background-color: #213743;
+    border-color: #2f4553;
+  }
+
+  .x4v7-search-input {
+    background-color: #1a2c38;
+    border: 1px solid #213743;
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 12px 16px 12px 42px;
+    width: 100%;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+
+  .x4v7-search-input:focus {
+    border-color: #1475e1;
+  }
+
+  .x4v7-seo-section {
+    background-color: #1a2c38;
+    border: 1px solid #213743;
+    border-radius: 8px;
+    padding: 28px;
+  }
+
+  .x4v7-seo-h2 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .x4v7-seo-p {
+    color: #b1bad3;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+  }
+
+  .x4v7-tag-chip {
+    background-color: #0f212e;
+    color: #1475e1;
+    border: 1px solid #213743;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.15s;
+  }
+
+  .x4v7-tag-chip:hover {
+    background-color: #1475e1;
+    color: #ffffff;
+    border-color: #1475e1;
+  }
+}
+
+/* CSS-only mobile drawer using :target */
+#mobile-sidebar-drawer {
+  display: none;
+}
+
+#mobile-sidebar-drawer:target {
+  display: block;
+}

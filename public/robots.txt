@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bezdepcasino11.vercel.app/sitemap.xml
