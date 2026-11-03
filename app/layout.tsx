@@ -8,6 +8,7 @@ export default function RootLayout({
   return (
     <html lang="ru" className="bg-[#0f212e]">
       <head>
+        <meta name="yandex-verification" content="f7ad9b4e86394e8b" />
         <title>Бездепозитный бонус казино за регистрацию | Бездепозитные бонусы казино 2025</title>
         <meta name="description" content="Лучшие бездепозитные бонусы казино за регистрацию без первого взноса. Получите бездеп бонус прямо сейчас: фриспины, реальные бездепы в казино и топовые бонусы казино с выводом." />
         <link rel="canonical" href="https://bezdepcasino11.vercel.app/" />
